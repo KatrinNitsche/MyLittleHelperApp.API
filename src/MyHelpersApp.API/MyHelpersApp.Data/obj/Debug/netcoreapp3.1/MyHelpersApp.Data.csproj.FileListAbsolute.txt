@@ -1,0 +1,9 @@
+C:\Users\Katrin Nitsche\source\repos\MyHelpersApp.API\MyHelpersApp.Data\bin\Debug\netcoreapp3.1\MyHelpersApp.Data.deps.json
+C:\Users\Katrin Nitsche\source\repos\MyHelpersApp.API\MyHelpersApp.Data\bin\Debug\netcoreapp3.1\MyHelpersApp.Data.dll
+C:\Users\Katrin Nitsche\source\repos\MyHelpersApp.API\MyHelpersApp.Data\bin\Debug\netcoreapp3.1\MyHelpersApp.Data.pdb
+C:\Users\Katrin Nitsche\source\repos\MyHelpersApp.API\MyHelpersApp.Data\obj\Debug\netcoreapp3.1\MyHelpersApp.Data.AssemblyInfoInputs.cache
+C:\Users\Katrin Nitsche\source\repos\MyHelpersApp.API\MyHelpersApp.Data\obj\Debug\netcoreapp3.1\MyHelpersApp.Data.AssemblyInfo.cs
+C:\Users\Katrin Nitsche\source\repos\MyHelpersApp.API\MyHelpersApp.Data\obj\Debug\netcoreapp3.1\MyHelpersApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\Katrin Nitsche\source\repos\MyHelpersApp.API\MyHelpersApp.Data\obj\Debug\netcoreapp3.1\MyHelpersApp.Data.dll
+C:\Users\Katrin Nitsche\source\repos\MyHelpersApp.API\MyHelpersApp.Data\obj\Debug\netcoreapp3.1\MyHelpersApp.Data.pdb
+C:\Users\Katrin Nitsche\source\repos\MyHelpersApp.API\MyHelpersApp.Data\obj\Debug\netcoreapp3.1\MyHelpersApp.Data.csprojAssemblyReference.cache
