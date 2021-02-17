@@ -29,6 +29,7 @@ namespace MyHelpersApp.API
                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<IToDoRepository, ToDoRepository>();
+            services.AddScoped<INoteRepository, NoteRepository>();
 
             services.AddControllers();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
@@ -49,7 +50,7 @@ namespace MyHelpersApp.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyHelpersApp.API v1"));
 
                 app.UseCors(
-                    options => options.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost")
+                    options => options.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost").AllowAnyHeader().AllowAnyMethod()
                 );
             }
 
