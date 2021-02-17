@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7J/f/SlY6Cwb+i3+SJoZizY+iF6lsT/DmLU2Z6uAoHtrzT/U0Fk9v88uQQ/xAmq84EZ3g/f7SzIEqw0Ju23+xQ==",
+  "dgSpecHash": "fWELtaU5yJ27MurfRRbNKaK0ZnSiGxm1HBifk53yiTK3LGIZ2/zyQ8gaADOlSAFo5FeB8cYTiHm2WQPiAm92vw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.API\\MyHelpersApp.API.csproj",
+  "projectFilePath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.API\\MyHelpersApp.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Katrin Nitsche\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",

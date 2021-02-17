@@ -37,7 +37,6 @@ namespace MyHelpersApp.DAL.Repository
         public IEnumerable<ToDo> GetAll()
         {
             return context.ToDos;
-
         }
 
         public ToDo Remove(ToDo toDo)

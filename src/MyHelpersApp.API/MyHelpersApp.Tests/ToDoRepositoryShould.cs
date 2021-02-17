@@ -96,9 +96,15 @@ namespace MyHelpersApp.Tests
               
                 foreach(var todo in todoList)
                 {
+                    todo.Content = todo.Content + " Updated";
                     todo.Completed = true;
                     sut.Update(todo);
                 }
+
+                todoList = sut.GetAll().ToList();
+
+                Assert.Contains("Updated", todoList[0].Content);
+                Assert.True(todoList[0].Completed);
             }
         }
     }

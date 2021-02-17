@@ -10,13 +10,11 @@ namespace MyHelpersApp.API.Controllers
     [ApiController]
     [Route("[controller]")]
     public class ToDoController : ControllerBase
-    {
-        //private readonly ILogger<WeatherForecastController> _logger;
+    {       
         private readonly IToDoRepository toDoRepository;
 
         public ToDoController(IToDoRepository toDoRepository)
         {
-            //_logger = logger;
             this.toDoRepository = toDoRepository;
         }
        

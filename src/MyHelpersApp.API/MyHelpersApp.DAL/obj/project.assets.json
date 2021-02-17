@@ -5797,11 +5797,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.DAL\\MyHelpersApp.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.DAL\\MyHelpersApp.DAL.csproj",
       "projectName": "MyHelpersApp.DAL",
-      "projectPath": "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.DAL\\MyHelpersApp.DAL.csproj",
+      "projectPath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.DAL\\MyHelpersApp.DAL.csproj",
       "packagesPath": "C:\\Users\\Katrin Nitsche\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.DAL\\obj\\",
+      "outputPath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5821,8 +5821,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.Data\\MyHelpersApp.Data.csproj": {
-              "projectPath": "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.Data\\MyHelpersApp.Data.csproj"
+            "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.Data\\MyHelpersApp.Data.csproj": {
+              "projectPath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.Data\\MyHelpersApp.Data.csproj"
             }
           }
         }

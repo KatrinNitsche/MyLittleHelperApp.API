@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+4+azVyd9zbvkzzVkRdzQXEQLcFHT78dQy3FwlET0vr3YjzergG2QH+hA8RZxlC8pMmy/u8l16rLNVoVirrpGg==",
+  "dgSpecHash": "uVAj4h/E0h4UzOfLC/KJ1gfzBuvG38r91GUrs0ttjo3rLbQ0aRIIr+3SjWgHgaA5s957CccSdiDy4KhmdS5ZNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.DAL\\MyHelpersApp.DAL.csproj",
+  "projectFilePath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.DAL\\MyHelpersApp.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Katrin Nitsche\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Katrin Nitsche\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

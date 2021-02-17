@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using MyHelpersApp.DAL.Interfaces;
 using MyHelpersApp.Data;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MyHelpersApp.API.Controllers
 {
@@ -9,27 +10,31 @@ namespace MyHelpersApp.API.Controllers
     [Route("[controller]")]
     public class NoteController : ControllerBase
     {
-        private readonly ILogger<NoteController> _logger;
-        private List<Note> notesRepository;
+        private readonly INoteRepository noteRepository;
 
-        public NoteController(ILogger<NoteController> logger)
+        public NoteController(INoteRepository noteRepository)
         {
-            _logger = logger;
-
-            this.notesRepository = new List<Note>
-            {
-                new Note()
-                {
-                    Title = "First Note",
-                    Description = "This is the first note. You can add new notes by using the form."
-                }
-            };
+            this.noteRepository = noteRepository;
         }
 
         [HttpGet]
         public IEnumerable<Note> Get()
         {
-            return this.notesRepository.ToArray();
+            return this.noteRepository.GetAll().OrderBy(x => x.Title).ToArray();
+        }
+
+        [HttpPost]
+        public Note Post(Note note)
+        {
+            this.noteRepository.Add(note);
+            return note;
+        }
+
+        [HttpDelete]
+        public Note Delete(Note note)
+        {
+            this.noteRepository.Remove(note);
+            return note;
         }
     }
 }

@@ -6188,11 +6188,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.API\\MyHelpersApp.API.csproj",
+      "projectUniqueName": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.API\\MyHelpersApp.API.csproj",
       "projectName": "MyHelpersApp.API",
-      "projectPath": "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.API\\MyHelpersApp.API.csproj",
+      "projectPath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.API\\MyHelpersApp.API.csproj",
       "packagesPath": "C:\\Users\\Katrin Nitsche\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.API\\obj\\",
+      "outputPath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6212,11 +6212,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.DAL\\MyHelpersApp.DAL.csproj": {
-              "projectPath": "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.DAL\\MyHelpersApp.DAL.csproj"
+            "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.DAL\\MyHelpersApp.DAL.csproj": {
+              "projectPath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.DAL\\MyHelpersApp.DAL.csproj"
             },
-            "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.Data\\MyHelpersApp.Data.csproj": {
-              "projectPath": "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.Data\\MyHelpersApp.Data.csproj"
+            "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.Data\\MyHelpersApp.Data.csproj": {
+              "projectPath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.Data\\MyHelpersApp.Data.csproj"
             }
           }
         }

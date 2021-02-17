@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LcPUa7in2Q+HxphJtKoWEW0wEuvVuE0jwBQV6hG6rKReZV74G7zBBowuojDoFIfG280itqHscOa+DleeOM+C9A==",
+  "dgSpecHash": "Uyt4f5wCNGFbzpLxka0mFhYVuAKRsGvey6kD/s+Ki/dFfdix53xYQAMZJGAp/5okb3NwWbbX7SzIImThfbz2aQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Katrin Nitsche\\source\\repos\\MyHelpersApp.API\\MyHelpersApp.Data\\MyHelpersApp.Data.csproj",
+  "projectFilePath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.Data\\MyHelpersApp.Data.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

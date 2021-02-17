@@ -11,5 +11,6 @@ namespace MyHelpersApp.DAL
         }
 
         public DbSet<ToDo> ToDos { get; set; }
+        public DbSet<Note> Notes { get; set; }
     }
 }
