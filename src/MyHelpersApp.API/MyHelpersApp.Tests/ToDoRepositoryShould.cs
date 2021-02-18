@@ -55,14 +55,14 @@ namespace MyHelpersApp.Tests
                         Content = $"ToDo {i + 1}",
                         Completed = false,
                         Important = false
-                    });
+                    }); ;
                 }
 
                 var todoList = sut.GetAll().ToList();
 
                 foreach (var todo in todoList)
                 {
-                    sut.Remove(todo);
+                    sut.Remove(todo.Id);
                 }
 
                 todoList = sut.GetAll().ToList();

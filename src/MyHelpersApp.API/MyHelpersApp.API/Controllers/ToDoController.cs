@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using MyHelpersApp.DAL.Interfaces;
 using MyHelpersApp.Data;
 using System.Collections.Generic;
@@ -32,10 +31,9 @@ namespace MyHelpersApp.API.Controllers
         }
 
         [HttpDelete]
-        public ToDo Delete(ToDo toDo)
+        public ToDo Delete(int id)
         {            
-            this.toDoRepository.Remove(toDo);
-            return toDo;
+            return this.toDoRepository.Remove(id);
         }
     }
 }

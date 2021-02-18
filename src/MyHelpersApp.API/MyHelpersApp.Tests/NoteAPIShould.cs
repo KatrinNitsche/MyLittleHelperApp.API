@@ -44,22 +44,6 @@ namespace MyHelpersApp.Tests
             }
         }
 
-        [Fact]
-        public void RemoveAToDo()
-        {
-            using (var mock = AutoMock.GetLoose())
-            {
-                mock.Mock<INoteRepository>()
-                    .Setup(x => x.Add(new Note()))
-                    .Returns(GetNewSampleNote());
-
-                var sut = mock.Create<NoteController>();
-
-                var newToDo = sut.Delete(new Note());
-                Assert.NotNull(newToDo);
-            }
-        }
-
         private Note GetNewSampleNote()
         {
             return new Note()

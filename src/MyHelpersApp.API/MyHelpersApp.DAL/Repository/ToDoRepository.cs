@@ -39,10 +39,15 @@ namespace MyHelpersApp.DAL.Repository
             return context.ToDos;
         }
 
-        public ToDo Remove(ToDo toDo)
+        public ToDo Remove(int id)
         {
-            context.Remove(toDo);
-            context.SaveChanges();
+            var toDo = context.ToDos.Find(id);
+            if (toDo != null)
+            {
+                context.Remove(toDo);
+                context.SaveChanges();
+            }
+
             return toDo;
         }
     }

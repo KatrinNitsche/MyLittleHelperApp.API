@@ -8,6 +8,6 @@ namespace MyHelpersApp.DAL.Interfaces
         IEnumerable<ToDo> GetAll();
         ToDo Add(ToDo toDo);
         ToDo Update(ToDo toDo);
-        ToDo Remove(ToDo toDo);
+        ToDo Remove(int toDo);
     }
 }

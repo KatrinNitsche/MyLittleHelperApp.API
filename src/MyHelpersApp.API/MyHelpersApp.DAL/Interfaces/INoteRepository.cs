@@ -7,7 +7,7 @@ namespace MyHelpersApp.DAL.Interfaces
     {
         Note Add(Note note);
         IEnumerable<Note> GetAll();
-        Note Remove(Note note);
+        Note Remove(int note);
         Note Update(Note note);
     }
 }

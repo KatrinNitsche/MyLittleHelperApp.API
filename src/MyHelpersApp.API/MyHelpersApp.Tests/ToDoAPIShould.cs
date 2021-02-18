@@ -43,23 +43,7 @@ namespace MyHelpersApp.Tests
                 Assert.NotNull(newToDo);
             }
         }
-
-        [Fact]
-        public void RemoveAToDo()
-        {
-            using (var mock = AutoMock.GetLoose())
-            {
-                mock.Mock<IToDoRepository>()
-                    .Setup(x => x.Add(new ToDo()))
-                    .Returns(GetNewSampleToDo());
-
-                var sut = mock.Create<ToDoController>();
-
-                var newToDo = sut.Delete(new ToDo());
-                Assert.NotNull(newToDo);
-            }
-        }
-
+              
         private List<ToDo> GetSampleToDos()
         {
             return new List<ToDo>

@@ -31,10 +31,9 @@ namespace MyHelpersApp.API.Controllers
         }
 
         [HttpDelete]
-        public Note Delete(Note note)
+        public Note Delete(int id)
         {
-            this.noteRepository.Remove(note);
-            return note;
+            return this.noteRepository.Remove(id);
         }
     }
 }

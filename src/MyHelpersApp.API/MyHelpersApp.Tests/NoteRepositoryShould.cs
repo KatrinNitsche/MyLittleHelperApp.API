@@ -60,7 +60,7 @@ namespace MyHelpersApp.Tests
 
                 foreach (var todo in noteList)
                 {
-                    sut.Remove(todo);
+                    sut.Remove(todo.Id);
                 }
 
                 noteList = sut.GetAll().ToList();

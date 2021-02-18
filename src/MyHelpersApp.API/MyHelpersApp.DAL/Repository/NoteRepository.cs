@@ -25,10 +25,15 @@ namespace MyHelpersApp.DAL.Repository
             return context.Notes;
         }
 
-        public Note Remove(Note note)
+        public Note Remove(int id)
         {
-            context.Remove(note);
-            context.SaveChanges();
+            var note = context.Notes.Find(id);
+            if (note != null)
+            {
+                context.Remove(note);
+                context.SaveChanges();
+            }
+
             return note;
         }
 
