@@ -26,7 +26,15 @@ namespace MyHelpersApp.API.Controllers
         [HttpPost]
         public ToDo Post(ToDo toDo)
         {
-            this.toDoRepository.Add(toDo);
+            if (toDo.Id == 0)
+            {
+                this.toDoRepository.Add(toDo);
+            }
+            else
+            {
+                this.toDoRepository.Update(toDo);
+            }
+            
             return toDo;
         }
 
