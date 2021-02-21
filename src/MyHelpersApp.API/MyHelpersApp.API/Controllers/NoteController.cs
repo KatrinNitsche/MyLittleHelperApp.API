@@ -26,7 +26,14 @@ namespace MyHelpersApp.API.Controllers
         [HttpPost]
         public Note Post(Note note)
         {
-            this.noteRepository.Add(note);
+            if (note.Id == 0)
+            {
+                this.noteRepository.Add(note);
+            }else
+            {
+                this.noteRepository.Update(note);
+            }
+
             return note;
         }
 
