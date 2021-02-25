@@ -1,5 +1,6 @@
 ﻿using MyHelpersApp.DAL.Interfaces;
 using MyHelpersApp.Data;
+using System;
 using System.Collections.Generic;
 
 namespace MyHelpersApp.DAL.Repository
@@ -15,6 +16,8 @@ namespace MyHelpersApp.DAL.Repository
 
         public ToDo Add(ToDo toDo)
         {
+            toDo.Created = DateTime.Now;
+            toDo.Updated = null;
             context.ToDos.Add(toDo);
             context.SaveChanges();
             return toDo;
@@ -28,6 +31,9 @@ namespace MyHelpersApp.DAL.Repository
                 entry.Content = toDo.Content;
                 entry.Completed = toDo.Completed;
                 entry.Important = toDo.Important;
+                entry.Updated = DateTime.Now;
+                entry.DueDate = toDo.DueDate;
+                entry.RepetitionType = toDo.RepetitionType;
                 context.SaveChanges();
             }
 

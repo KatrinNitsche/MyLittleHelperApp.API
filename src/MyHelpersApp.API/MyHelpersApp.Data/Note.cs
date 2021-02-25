@@ -1,8 +1,7 @@
 ﻿namespace MyHelpersApp.Data
 {
-    public class Note
+    public class Note : BaseDbEntry
     {
-        public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
     }
