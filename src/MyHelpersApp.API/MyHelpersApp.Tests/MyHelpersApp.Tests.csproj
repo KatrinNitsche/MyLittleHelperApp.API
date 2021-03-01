@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyHelpersApp.API\MyHelpersApp.API.csproj" />
+    <ProjectReference Include="..\MyHelpersApp.BL\MyHelpersApp.BL.csproj" />
     <ProjectReference Include="..\MyHelpersApp.Data\MyHelpersApp.Data.csproj" />
   </ItemGroup>
 

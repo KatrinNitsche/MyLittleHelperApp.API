@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyHelpersApp.API", "MyHelpe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyHelpersApp.Data", "MyHelpersApp.Data\MyHelpersApp.Data.csproj", "{2D62CC76-71C8-4F08-A2B2-19585AF5EC45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHelpersApp.Tests", "MyHelpersApp.Tests\MyHelpersApp.Tests.csproj", "{9FEBB70B-74A0-4EE1-BADF-9A4ED48855DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyHelpersApp.Tests", "MyHelpersApp.Tests\MyHelpersApp.Tests.csproj", "{9FEBB70B-74A0-4EE1-BADF-9A4ED48855DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHelpersApp.DAL", "MyHelpersApp.DAL\MyHelpersApp.DAL.csproj", "{3130641D-8AAD-4BA3-B206-040F9EB69788}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyHelpersApp.DAL", "MyHelpersApp.DAL\MyHelpersApp.DAL.csproj", "{3130641D-8AAD-4BA3-B206-040F9EB69788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHelpersApp.BL", "MyHelpersApp.BL\MyHelpersApp.BL.csproj", "{811C9D03-CFB0-4E68-AB7F-35C0437F750F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3130641D-8AAD-4BA3-B206-040F9EB69788}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3130641D-8AAD-4BA3-B206-040F9EB69788}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3130641D-8AAD-4BA3-B206-040F9EB69788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811C9D03-CFB0-4E68-AB7F-35C0437F750F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811C9D03-CFB0-4E68-AB7F-35C0437F750F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811C9D03-CFB0-4E68-AB7F-35C0437F750F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811C9D03-CFB0-4E68-AB7F-35C0437F750F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

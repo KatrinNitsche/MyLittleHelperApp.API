@@ -2688,6 +2688,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Cors": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.3",
+          "MyHelpersApp.BL": "1.0.0",
           "MyHelpersApp.DAL": "1.0.0",
           "MyHelpersApp.Data": "1.0.0",
           "Swashbuckle.AspNetCore": "6.0.2"
@@ -2701,6 +2702,20 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "MyHelpersApp.BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MyHelpersApp.DAL": "1.0.0",
+          "MyHelpersApp.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyHelpersApp.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyHelpersApp.BL.dll": {}
+        }
       },
       "MyHelpersApp.DAL/1.0.0": {
         "type": "project",
@@ -8642,6 +8657,11 @@
       "path": "../MyHelpersApp.API/MyHelpersApp.API.csproj",
       "msbuildProject": "../MyHelpersApp.API/MyHelpersApp.API.csproj"
     },
+    "MyHelpersApp.BL/1.0.0": {
+      "type": "project",
+      "path": "../MyHelpersApp.BL/MyHelpersApp.BL.csproj",
+      "msbuildProject": "../MyHelpersApp.BL/MyHelpersApp.BL.csproj"
+    },
     "MyHelpersApp.DAL/1.0.0": {
       "type": "project",
       "path": "../MyHelpersApp.DAL/MyHelpersApp.DAL.csproj",
@@ -8660,6 +8680,7 @@
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "Moq >= 4.16.0",
       "MyHelpersApp.API >= 1.0.0",
+      "MyHelpersApp.BL >= 1.0.0",
       "MyHelpersApp.Data >= 1.0.0",
       "coverlet.collector >= 1.3.0",
       "xunit >= 2.4.1",
@@ -8699,6 +8720,9 @@
           "projectReferences": {
             "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.API\\MyHelpersApp.API.csproj": {
               "projectPath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.API\\MyHelpersApp.API.csproj"
+            },
+            "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.BL\\MyHelpersApp.BL.csproj": {
+              "projectPath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.BL\\MyHelpersApp.BL.csproj"
             },
             "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.Data\\MyHelpersApp.Data.csproj": {
               "projectPath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.Data\\MyHelpersApp.Data.csproj"

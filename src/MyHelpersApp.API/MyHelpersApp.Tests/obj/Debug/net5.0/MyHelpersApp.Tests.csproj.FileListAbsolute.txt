@@ -292,3 +292,5 @@ C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelp
 C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.Tests\obj\Debug\net5.0\ref\MyHelpersApp.Tests.dll
 C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.Tests\obj\Debug\net5.0\MyHelpersApp.Tests.pdb
 C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.Tests\obj\Debug\net5.0\MyHelpersApp.Tests.genruntimeconfig.cache
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.Tests\bin\Debug\net5.0\MyHelpersApp.BL.dll
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.Tests\bin\Debug\net5.0\MyHelpersApp.BL.pdb

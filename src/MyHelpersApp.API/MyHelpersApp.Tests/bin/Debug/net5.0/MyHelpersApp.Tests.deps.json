@@ -13,6 +13,7 @@
           "Microsoft.NET.Test.Sdk": "16.7.1",
           "Moq": "4.16.0",
           "MyHelpersApp.API": "1.0.0",
+          "MyHelpersApp.BL": "1.0.0",
           "MyHelpersApp.Data": "1.0.0",
           "coverlet.collector": "1.3.0",
           "xunit": "2.4.1",
@@ -1749,6 +1750,15 @@
           "MyHelpersApp.API.dll": {}
         }
       },
+      "MyHelpersApp.BL/1.0.0": {
+        "dependencies": {
+          "MyHelpersApp.DAL": "1.0.0",
+          "MyHelpersApp.Data": "1.0.0"
+        },
+        "runtime": {
+          "MyHelpersApp.BL.dll": {}
+        }
+      },
       "MyHelpersApp.DAL/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.3",
@@ -2887,6 +2897,11 @@
       "hashPath": "xunit.runner.visualstudio.2.4.3.nupkg.sha512"
     },
     "MyHelpersApp.API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyHelpersApp.BL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyHelpersApp.DAL.Interfaces;
+using MyHelpersApp.BL.Interfaces;
 using MyHelpersApp.Data;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,17 +10,17 @@ namespace MyHelpersApp.API.Controllers
     [Route("[controller]")]
     public class ToDoController : ControllerBase
     {       
-        private readonly IToDoRepository toDoRepository;
+        private readonly IToDoService toDoService;
 
-        public ToDoController(IToDoRepository toDoRepository)
+        public ToDoController(IToDoService toDoService)
         {
-            this.toDoRepository = toDoRepository;
+            this.toDoService = toDoService;
         }
        
         [HttpGet]
         public IEnumerable<ToDo> Get()
         {
-            return this.toDoRepository.GetAll().OrderBy(x => x.Important).ToArray();
+            return this.toDoService.GetAll().OrderBy(x => x.Important).ToArray();
         }
 
         [HttpPost]
@@ -28,11 +28,11 @@ namespace MyHelpersApp.API.Controllers
         {
             if (toDo.Id == 0)
             {
-                this.toDoRepository.Add(toDo);
+                this.toDoService.Add(toDo);
             }
             else
             {
-                this.toDoRepository.Update(toDo);
+                this.toDoService.Update(toDo);
             }
             
             return toDo;
@@ -41,7 +41,7 @@ namespace MyHelpersApp.API.Controllers
         [HttpDelete]
         public ToDo Delete(int id)
         {            
-            return this.toDoRepository.Remove(id);
+            return this.toDoService.Remove(id);
         }
     }
 }

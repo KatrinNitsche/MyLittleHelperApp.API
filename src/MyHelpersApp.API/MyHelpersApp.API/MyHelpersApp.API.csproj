@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MyHelpersApp.BL\MyHelpersApp.BL.csproj" />
     <ProjectReference Include="..\MyHelpersApp.DAL\MyHelpersApp.DAL.csproj" />
     <ProjectReference Include="..\MyHelpersApp.Data\MyHelpersApp.Data.csproj" />
   </ItemGroup>

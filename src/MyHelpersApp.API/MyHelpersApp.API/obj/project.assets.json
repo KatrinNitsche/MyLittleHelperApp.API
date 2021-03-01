@@ -1681,6 +1681,20 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "MyHelpersApp.BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MyHelpersApp.DAL": "1.0.0",
+          "MyHelpersApp.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyHelpersApp.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyHelpersApp.BL.dll": {}
+        }
+      },
       "MyHelpersApp.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -6160,6 +6174,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "MyHelpersApp.BL/1.0.0": {
+      "type": "project",
+      "path": "../MyHelpersApp.BL/MyHelpersApp.BL.csproj",
+      "msbuildProject": "../MyHelpersApp.BL/MyHelpersApp.BL.csproj"
+    },
     "MyHelpersApp.DAL/1.0.0": {
       "type": "project",
       "path": "../MyHelpersApp.DAL/MyHelpersApp.DAL.csproj",
@@ -6176,6 +6195,7 @@
       "Microsoft.AspNetCore.Cors >= 2.2.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.3",
+      "MyHelpersApp.BL >= 1.0.0",
       "MyHelpersApp.DAL >= 1.0.0",
       "MyHelpersApp.Data >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.0.2"
@@ -6212,6 +6232,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.BL\\MyHelpersApp.BL.csproj": {
+              "projectPath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.BL\\MyHelpersApp.BL.csproj"
+            },
             "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.DAL\\MyHelpersApp.DAL.csproj": {
               "projectPath": "C:\\Users\\Katrin Nitsche\\source\\Workspaces\\Portfolio\\MyLittleHelperApp\\src\\MyHelpersApp.API\\MyHelpersApp.DAL\\MyHelpersApp.DAL.csproj"
             },
