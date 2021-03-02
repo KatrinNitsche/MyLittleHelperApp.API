@@ -62,23 +62,35 @@ namespace MyHelpersApp.BL.Services
                 var oldToDo = GetAll().FirstOrDefault(t => t.Id == toDo.Id);
                 if (oldToDo == null) return null;
 
-                if (!oldToDo.Completed && toDo.Completed)
+                var today = DateTime.Today;
+                if (!oldToDo.Completed && toDo.Completed && toDo.DueDate <= today)
                 {
+                    var nextTask = new ToDo()
+                    {
+                        Completed = false,
+                        Content = toDo.Content,
+                        Created = DateTime.Now,
+                        Important = toDo.Important,
+                        RepetitionType = toDo.RepetitionType
+                    };
+
                     switch (toDo.RepetitionType)
                     {
                         case 1:
-                            toDo.DueDate = toDo.DueDate.AddDays(1);
+                            nextTask.DueDate = DateTime.Now.AddDays(1);
                             break;
                         case 2:
-                            toDo.DueDate = toDo.DueDate.AddDays(7);
+                            nextTask.DueDate = DateTime.Now.AddDays(7);
                             break;
                         case 3:
-                            toDo.DueDate = toDo.DueDate.AddMonths(1);
+                            nextTask.DueDate = DateTime.Now.AddMonths(1);
                             break;
                         case 4:
-                            toDo.DueDate = toDo.DueDate.AddYears(1);
+                            nextTask.DueDate = DateTime.Now.AddYears(1);
                             break;
                     }
+
+                    Add(nextTask);
                 }
 
                 return this.toDoRepository.Update(toDo);

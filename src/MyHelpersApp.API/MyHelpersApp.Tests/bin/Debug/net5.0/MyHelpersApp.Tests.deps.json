@@ -1742,6 +1742,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Cors": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.3",
+          "MyHelpersApp.BL": "1.0.0",
           "MyHelpersApp.DAL": "1.0.0",
           "MyHelpersApp.Data": "1.0.0",
           "Swashbuckle.AspNetCore": "6.0.2"

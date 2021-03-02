@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using MyHelpersApp.BL.Interfaces;
+using MyHelpersApp.BL.Services;
 using MyHelpersApp.DAL;
 using MyHelpersApp.DAL.Interfaces;
 using MyHelpersApp.DAL.Repository;
@@ -30,6 +32,8 @@ namespace MyHelpersApp.API
 
             services.AddScoped<IToDoRepository, ToDoRepository>();
             services.AddScoped<INoteRepository, NoteRepository>();
+
+            services.AddTransient<IToDoService, ToDoService>();
 
             services.AddControllers();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);

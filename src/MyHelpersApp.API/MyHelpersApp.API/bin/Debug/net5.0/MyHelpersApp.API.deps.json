@@ -28,6 +28,7 @@
           "Microsoft.AspNetCore.Cors": "2.2.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.3",
+          "MyHelpersApp.BL": "1.0.0",
           "MyHelpersApp.DAL": "1.0.0",
           "MyHelpersApp.Data": "1.0.0",
           "Swashbuckle.AspNetCore": "6.0.2",
@@ -1401,6 +1402,18 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
+        }
+      },
+      "MyHelpersApp.BL/1.0.0": {
+        "dependencies": {
+          "MyHelpersApp.DAL": "1.0.0",
+          "MyHelpersApp.Data": "1.0.0"
+        },
+        "runtime": {
+          "MyHelpersApp.BL.dll": {}
+        },
+        "compile": {
+          "MyHelpersApp.BL.dll": {}
         }
       },
       "MyHelpersApp.DAL/1.0.0": {
@@ -3888,6 +3901,11 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "MyHelpersApp.BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MyHelpersApp.DAL/1.0.0": {
       "type": "project",

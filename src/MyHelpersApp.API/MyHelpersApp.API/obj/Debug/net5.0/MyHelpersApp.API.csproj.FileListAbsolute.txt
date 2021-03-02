@@ -128,3 +128,5 @@ C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelp
 C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.API\obj\Debug\net5.0\ref\MyHelpersApp.API.dll
 C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.API\obj\Debug\net5.0\MyHelpersApp.API.pdb
 C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.API\obj\Debug\net5.0\MyHelpersApp.API.genruntimeconfig.cache
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.API\bin\Debug\net5.0\MyHelpersApp.BL.dll
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.API\bin\Debug\net5.0\MyHelpersApp.BL.pdb
