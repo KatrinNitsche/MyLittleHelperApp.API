@@ -114,16 +114,11 @@ namespace MyHelpersApp.Tests
                 sut.Update(toDoToChange);
 
                 var todoList2 = sut.GetAll().ToList();
-                var changedtoDo = todoList2[0];
-                var nextToDo = todoList2[1];
+                var changedtoDo = todoList2[0];              
 
                 Assert.Equal(1, changedtoDo.RepetitionType);
-                Assert.True(changedtoDo.Completed);
-                Assert.Equal(DateTime.Now.Date, changedtoDo.DueDate.Date);
-
-                Assert.Equal(1, nextToDo.RepetitionType);
-                Assert.False(nextToDo.Completed);
-                Assert.Equal(DateTime.Now.Date.AddDays(1), nextToDo.DueDate.Date);
+                Assert.False(changedtoDo.Completed);
+                Assert.Equal(DateTime.Now.Date.AddDays(1), changedtoDo.DueDate.Date);
 
             }
         }

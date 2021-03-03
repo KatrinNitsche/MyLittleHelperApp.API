@@ -29,7 +29,8 @@ namespace MyHelpersApp.API.Controllers
             if (note.Id == 0)
             {
                 this.noteRepository.Add(note);
-            }else
+            }
+            else
             {
                 this.noteRepository.Update(note);
             }

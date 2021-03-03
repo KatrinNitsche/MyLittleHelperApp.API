@@ -63,7 +63,7 @@ namespace MyHelpersApp.BL.Services
                 if (oldToDo == null) return null;
 
                 var today = DateTime.Today;
-                if (!oldToDo.Completed && toDo.Completed && toDo.DueDate <= today)
+                if (!oldToDo.Completed && toDo.Completed && toDo.RepetitionType > 0)
                 {
                     var nextTask = new ToDo()
                     {
@@ -91,6 +91,7 @@ namespace MyHelpersApp.BL.Services
                     }
 
                     Add(nextTask);
+                    Remove(oldToDo.Id);
                 }
 
                 return this.toDoRepository.Update(toDo);
