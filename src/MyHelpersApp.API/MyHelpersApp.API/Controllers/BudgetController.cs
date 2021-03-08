@@ -4,7 +4,6 @@ using MyHelpersApp.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace MyHelpersApp.API.Controllers
 {
@@ -20,9 +19,16 @@ namespace MyHelpersApp.API.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<BudgetEntry> Get()
+        public IEnumerable<BudgetEntry> Get(bool thisMonth = false)
         {
-            return this.budgetRepository.GetAll().OrderBy(b => b.BudgetDate);
+            if (thisMonth)
+            {
+                return this.budgetRepository.GetAll().Where(be => be.BudgetDate.Date.Year == DateTime.Now.Year && be.BudgetDate.Date.Month == DateTime.Now.Month);
+            }
+            else
+            {
+                return this.budgetRepository.GetAll().OrderBy(b => b.BudgetDate);
+            }
         }
 
         [HttpPost]
