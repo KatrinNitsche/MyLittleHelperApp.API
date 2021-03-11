@@ -33,6 +33,7 @@ namespace MyHelpersApp.API
             services.AddScoped<IToDoRepository, ToDoRepository>();
             services.AddScoped<INoteRepository, NoteRepository>();
             services.AddScoped<IBudgetRepository, BudgetRepository>();
+            services.AddScoped<ISettingsRepository, SettingsRepository>();
 
             services.AddTransient<IToDoService, ToDoService>();
 
