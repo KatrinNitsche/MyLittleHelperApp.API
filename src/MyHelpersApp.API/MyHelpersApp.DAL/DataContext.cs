@@ -14,5 +14,7 @@ namespace MyHelpersApp.DAL
         public DbSet<Note> Notes { get; set; }
         public DbSet<BudgetEntry> BudgetEntries { get; set; }
         public DbSet<Settings> Settings { get; set; }
+        public DbSet<MealPlanDay> MealPlanDays { get; set; }
+        public DbSet<Meal> Meals { get; set; }
     }
 }
