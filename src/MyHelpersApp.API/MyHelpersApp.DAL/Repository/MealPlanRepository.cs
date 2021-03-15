@@ -52,9 +52,9 @@ namespace MyHelpersApp.DAL.Repository
                         WeekDayName = item,
                         Meals = new List<Meal>()
                         {
-                            new Meal() {MealName = "Meal 1", Comment = "Comment for meal 1", Duration = new System.TimeSpan(0,0,0) },
-                            new Meal() {MealName = "Meal 2", Comment = "Comment for meal 1", Duration = new System.TimeSpan(0,0,0) },
-                            new Meal() {MealName = "Meal 3", Comment = "Comment for meal 1", Duration = new System.TimeSpan(0,0,0) }
+                            new Meal() {MealName = "Meal 1", Comment = "Comment for meal 1", Duration = new System.DateTime() },
+                            new Meal() {MealName = "Meal 2", Comment = "Comment for meal 1", Duration = new System.DateTime() },
+                            new Meal() {MealName = "Meal 3", Comment = "Comment for meal 1", Duration = new System.DateTime() }
                         }
                     };
 
