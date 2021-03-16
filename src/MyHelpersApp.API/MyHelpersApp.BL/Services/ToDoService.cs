@@ -29,11 +29,11 @@ namespace MyHelpersApp.BL.Services
             }
         }
 
-        public IEnumerable<ToDo> GetAll()
+        public IEnumerable<ToDo> GetAll(int? categoryId)
         {
             try
             {
-                return this.toDoRepository.GetAll();
+                return this.toDoRepository.GetAll(categoryId);
             }
             catch (Exception)
             {
@@ -59,7 +59,7 @@ namespace MyHelpersApp.BL.Services
         {
             try
             {
-                var oldToDo = GetAll().FirstOrDefault(t => t.Id == toDo.Id);
+                var oldToDo = GetAll(null).FirstOrDefault(t => t.Id == toDo.Id);
                 if (oldToDo == null) return null;
 
                 var today = DateTime.Today;

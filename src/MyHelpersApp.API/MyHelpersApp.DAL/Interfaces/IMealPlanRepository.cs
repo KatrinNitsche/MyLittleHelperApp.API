@@ -7,5 +7,6 @@ namespace MyHelpersApp.DAL.Interfaces
     {
         IEnumerable<MealPlanDay> LoadPlan();
         MealPlanDay Add(MealPlanDay newWeekDay);
+        IEnumerable<MealPlanDay> Reset();
     }
 }

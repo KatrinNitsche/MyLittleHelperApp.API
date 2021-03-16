@@ -16,5 +16,6 @@ namespace MyHelpersApp.DAL
         public DbSet<Settings> Settings { get; set; }
         public DbSet<MealPlanDay> MealPlanDays { get; set; }
         public DbSet<Meal> Meals { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }

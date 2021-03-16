@@ -34,7 +34,7 @@ namespace MyHelpersApp.Tests
                     });
                 }
 
-                var todoList = sut.GetAll().ToList();
+                var todoList = sut.GetAll(null).ToList();
                 Assert.NotNull(todoList);
                 Assert.True(todoList.Any());
             }
@@ -62,14 +62,14 @@ namespace MyHelpersApp.Tests
                     });
                 }
 
-                var todoList = sut.GetAll().ToList();
+                var todoList = sut.GetAll(null).ToList();
 
                 foreach (var todo in todoList)
                 {
                     sut.Remove(todo.Id);
                 }
 
-                todoList = sut.GetAll().ToList();
+                todoList = sut.GetAll(null).ToList();
                 Assert.NotNull(todoList);
                 Assert.False(todoList.Any());
             }
@@ -96,7 +96,7 @@ namespace MyHelpersApp.Tests
                     RepetitionType = 1
                 });
 
-                var todoList = sut.GetAll().ToList();
+                var todoList = sut.GetAll(null).ToList();
 
                 var toDoToChange = new ToDo()
                 {
@@ -113,7 +113,7 @@ namespace MyHelpersApp.Tests
                 toDoToChange.Completed = true;
                 sut.Update(toDoToChange);
 
-                var todoList2 = sut.GetAll().ToList();
+                var todoList2 = sut.GetAll(null).ToList();
                 var changedtoDo = todoList2[0];              
 
                 Assert.Equal(1, changedtoDo.RepetitionType);

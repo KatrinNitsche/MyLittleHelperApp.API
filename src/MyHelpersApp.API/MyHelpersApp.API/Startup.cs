@@ -35,6 +35,7 @@ namespace MyHelpersApp.API
             services.AddScoped<IBudgetRepository, BudgetRepository>();
             services.AddScoped<ISettingsRepository, SettingsRepository>();
             services.AddScoped<IMealPlanRepository, MealPlanRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
 
             services.AddTransient<IToDoService, ToDoService>();
 

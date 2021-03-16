@@ -31,7 +31,7 @@ namespace MyHelpersApp.Tests
                     });
                 }
 
-                var todoList = sut.GetAll().ToList();
+                var todoList = sut.GetAll(null).ToList();
                 Assert.NotNull(todoList);
                 Assert.True(todoList.Any());
             }
@@ -58,14 +58,14 @@ namespace MyHelpersApp.Tests
                     }); ;
                 }
 
-                var todoList = sut.GetAll().ToList();
+                var todoList = sut.GetAll(null).ToList();
 
                 foreach (var todo in todoList)
                 {
                     sut.Remove(todo.Id);
                 }
 
-                todoList = sut.GetAll().ToList();
+                todoList = sut.GetAll(null).ToList();
                 Assert.NotNull(todoList);
                 Assert.False(todoList.Any());
             }
@@ -92,7 +92,7 @@ namespace MyHelpersApp.Tests
                     });
                 }
 
-                var todoList = sut.GetAll().ToList();
+                var todoList = sut.GetAll(null).ToList();
               
                 foreach(var todo in todoList)
                 {
@@ -101,10 +101,47 @@ namespace MyHelpersApp.Tests
                     sut.Update(todo);
                 }
 
-                todoList = sut.GetAll().ToList();
+                todoList = sut.GetAll(null).ToList();
 
                 Assert.Contains("Updated", todoList[0].Content);
                 Assert.True(todoList[0].Completed);
+            }
+        }
+
+        [Fact]
+        public void ReturnAListOfToDosForACategory()
+        {
+            var options = new DbContextOptionsBuilder<DataContext>()
+              .UseInMemoryDatabase("InMemoryData")
+              .Options;
+
+            using (var context = new DataContext(options))
+            {
+                ICategoryRepository categoryRepository = new CategoryRepository(context);
+                var category = new Category()
+                {
+                    Colour = "#101010",
+                    Name = "Test Category"
+                };
+                categoryRepository.Add(category);
+
+
+                IToDoRepository sut = new ToDoRepository(context);
+
+                for (int i = 0; i < 3; i++)
+                {
+                    sut.Add(new ToDo()
+                    {
+                        Content = $"ToDo {i + 1}",
+                        Completed = false,
+                        Important = false,
+                        CategoryId = category.Id
+                    });
+                }
+
+                var todoList = sut.GetAll(category.Id).ToList();
+                Assert.NotNull(todoList);
+                Assert.True(todoList.Count == 3);
             }
         }
     }

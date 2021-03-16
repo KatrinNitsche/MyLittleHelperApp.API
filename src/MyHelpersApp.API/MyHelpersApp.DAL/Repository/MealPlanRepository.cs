@@ -65,5 +65,40 @@ namespace MyHelpersApp.DAL.Repository
 
             return this.context.MealPlanDays.Include(x => x.Meals);
         }
+
+        public IEnumerable<MealPlanDay> Reset()
+        {
+            var allEntries = this.context.MealPlanDays.Include(x => x.Meals);
+            foreach (var entry in allEntries)
+            {
+                foreach (var meal in entry.Meals) 
+                {
+                    this.context.Meals.Remove(meal);
+                }
+                this.context.Remove(entry);
+            }
+
+            context.SaveChanges();
+
+            var weekDays = new List<string>() { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+            foreach (var item in weekDays)
+            {
+                var newWeekDay = new MealPlanDay()
+                {
+                    WeekDayName = item,
+                    Meals = new List<Meal>()
+                        {
+                            new Meal() {MealName = "Meal 1", Comment = "Comment for meal 1", Duration = new System.DateTime() },
+                            new Meal() {MealName = "Meal 2", Comment = "Comment for meal 1", Duration = new System.DateTime() },
+                            new Meal() {MealName = "Meal 3", Comment = "Comment for meal 1", Duration = new System.DateTime() }
+                        }
+                };
+
+                context.MealPlanDays.Add(newWeekDay);
+                context.SaveChanges();
+            }
+
+            return this.context.MealPlanDays.Include(x => x.Meals);
+        }
     }
 }

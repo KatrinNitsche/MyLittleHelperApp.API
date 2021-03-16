@@ -19,15 +19,15 @@ namespace MyHelpersApp.API.Controllers
         }
        
         [HttpGet]
-        public IEnumerable<ToDo> Get(bool todaysToDos = false)
+        public IEnumerable<ToDo> Get( int? categoryId, bool todaysToDos = false)
         {
             if (!todaysToDos)
             {
-                return this.toDoService.GetAll().OrderBy(x => x.Important).ToArray();
+                return this.toDoService.GetAll(categoryId).OrderBy(x => x.Important).ToArray();
             } 
             else
             {
-                return this.toDoService.GetAll().Where(td => td.DueDate.Date == DateTime.Now.Date).OrderBy(x => x.Important).ToArray();
+                return this.toDoService.GetAll(categoryId).Where(td => td.DueDate.Date == DateTime.Now.Date).OrderBy(x => x.Important).ToArray();
             }            
         }
 

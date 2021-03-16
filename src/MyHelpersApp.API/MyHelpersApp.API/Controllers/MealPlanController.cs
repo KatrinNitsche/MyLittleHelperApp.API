@@ -17,8 +17,12 @@ namespace MyHelpersApp.API.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<MealPlanDay> Get()
+        public IEnumerable<MealPlanDay> Get(bool reset = false)
         {
+            if (reset)
+            {
+                return this.mealPlanRepository.Reset();
+            }
             return this.mealPlanRepository.LoadPlan();
         }
 

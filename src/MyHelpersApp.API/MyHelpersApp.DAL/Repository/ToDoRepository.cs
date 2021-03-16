@@ -2,6 +2,7 @@
 using MyHelpersApp.Data;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MyHelpersApp.DAL.Repository
 {
@@ -34,15 +35,23 @@ namespace MyHelpersApp.DAL.Repository
                 entry.Updated = DateTime.Now;
                 entry.DueDate = toDo.DueDate;
                 entry.RepetitionType = toDo.RepetitionType;
+                entry.CategoryId = toDo.CategoryId;
                 context.SaveChanges();
             }
 
             return entry;
         }
 
-        public IEnumerable<ToDo> GetAll()
+        public IEnumerable<ToDo> GetAll(int? categoryId)
         {
-            return context.ToDos;
+            if (categoryId == null)
+            {
+                return context.ToDos;
+            } 
+            else
+            {
+                return context.ToDos.Where(x => x.CategoryId == categoryId);
+            }
         }
 
         public ToDo Remove(int id)
