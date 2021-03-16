@@ -45,6 +45,7 @@ namespace MyHelpersApp.DAL.Repository
                 entry.Description = note.Description;
                 entry.Title = note.Title;
                 entry.ParentId = note.ParentId;
+                entry.CategoryId = note.CategoryId;
                 context.SaveChanges();
             }
 
