@@ -7,5 +7,6 @@
         public string MiddleColour { get; set; }
         public string LightColour { get; set; }    
         public string Currency { get; set; }
+        public string NavigationPosition { get; set; }
     }
 }

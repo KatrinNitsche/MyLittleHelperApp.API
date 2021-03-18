@@ -24,7 +24,8 @@ namespace MyHelpersApp.DAL.Repository
                     Currency = "£",
                     DarkColour = "#0B2545",
                     MiddleColour = "#8DA9C4",
-                    LightColour = "#EEF4ED"
+                    LightColour = "#EEF4ED",
+                    NavigationPosition = "top"
                 };
 
                 context.Settings.Add(newSettings);
@@ -48,6 +49,7 @@ namespace MyHelpersApp.DAL.Repository
                 settings.DarkColour = newSettings.DarkColour;
                 settings.LightColour = newSettings.LightColour;
                 settings.MiddleColour = newSettings.MiddleColour;
+                settings.NavigationPosition = newSettings.NavigationPosition;
             }
 
             context.SaveChanges();
