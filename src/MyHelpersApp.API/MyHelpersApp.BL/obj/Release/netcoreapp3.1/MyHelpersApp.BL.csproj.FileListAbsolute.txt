@@ -1,0 +1,14 @@
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\bin\Release\netcoreapp3.1\MyHelpersApp.BL.deps.json
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\bin\Release\netcoreapp3.1\MyHelpersApp.BL.dll
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\bin\Release\netcoreapp3.1\MyHelpersApp.BL.pdb
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\bin\Release\netcoreapp3.1\MyHelpersApp.DAL.dll
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\bin\Release\netcoreapp3.1\MyHelpersApp.Data.dll
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\bin\Release\netcoreapp3.1\MyHelpersApp.DAL.pdb
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\bin\Release\netcoreapp3.1\MyHelpersApp.Data.pdb
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\obj\Release\netcoreapp3.1\MyHelpersApp.BL.csprojAssemblyReference.cache
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\obj\Release\netcoreapp3.1\MyHelpersApp.BL.AssemblyInfoInputs.cache
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\obj\Release\netcoreapp3.1\MyHelpersApp.BL.AssemblyInfo.cs
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\obj\Release\netcoreapp3.1\MyHelpersApp.BL.csproj.CoreCompileInputs.cache
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\obj\Release\netcoreapp3.1\MyHelpersApp.BL.csproj.CopyComplete
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\obj\Release\netcoreapp3.1\MyHelpersApp.BL.dll
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.BL\obj\Release\netcoreapp3.1\MyHelpersApp.BL.pdb

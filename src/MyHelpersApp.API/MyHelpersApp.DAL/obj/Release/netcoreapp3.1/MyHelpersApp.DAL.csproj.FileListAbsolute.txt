@@ -1,0 +1,15 @@
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\bin\Release\netcoreapp3.1\MyHelpersApp.DAL.deps.json
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\bin\Release\netcoreapp3.1\MyHelpersApp.DAL.runtimeconfig.json
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\bin\Release\netcoreapp3.1\MyHelpersApp.DAL.runtimeconfig.dev.json
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\bin\Release\netcoreapp3.1\MyHelpersApp.DAL.dll
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\bin\Release\netcoreapp3.1\MyHelpersApp.DAL.pdb
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\bin\Release\netcoreapp3.1\MyHelpersApp.Data.dll
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\bin\Release\netcoreapp3.1\MyHelpersApp.Data.pdb
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\obj\Release\netcoreapp3.1\MyHelpersApp.DAL.csprojAssemblyReference.cache
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\obj\Release\netcoreapp3.1\MyHelpersApp.DAL.AssemblyInfoInputs.cache
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\obj\Release\netcoreapp3.1\MyHelpersApp.DAL.AssemblyInfo.cs
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\obj\Release\netcoreapp3.1\MyHelpersApp.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\obj\Release\netcoreapp3.1\MyHelpersApp.DAL.csproj.CopyComplete
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\obj\Release\netcoreapp3.1\MyHelpersApp.DAL.dll
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\obj\Release\netcoreapp3.1\MyHelpersApp.DAL.pdb
+C:\Users\Katrin Nitsche\source\Workspaces\Portfolio\MyLittleHelperApp\src\MyHelpersApp.API\MyHelpersApp.DAL\obj\Release\netcoreapp3.1\MyHelpersApp.DAL.genruntimeconfig.cache
