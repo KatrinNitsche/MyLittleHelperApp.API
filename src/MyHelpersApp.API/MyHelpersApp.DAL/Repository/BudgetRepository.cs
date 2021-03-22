@@ -51,6 +51,7 @@ namespace MyHelpersApp.DAL.Repository
                 entry.Description = budgetEntry.Description;
                 entry.Updated = DateTime.Now;
                 entry.Description = budgetEntry.Description;
+                entry.RepetitionType = budgetEntry.RepetitionType;
                 context.SaveChanges();
             }
 

@@ -10,7 +10,5 @@ namespace MyHelpersApp.Data
         public int RepetitionType { get; set; }
         public DateTime DueDate { get; set; }
         public int? CategoryId { get; set; }
-    }
-
-    public enum RepetitionType { none, daily, weekly, monthly, yearly }
+    }   
 }
