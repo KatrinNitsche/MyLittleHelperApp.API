@@ -114,7 +114,7 @@ namespace MyHelpersApp.Tests
                 sut.Update(toDoToChange);
 
                 var todoList2 = sut.GetAll(null).ToList();
-                var changedtoDo = todoList2[0];              
+                var changedtoDo = todoList2.Last();              
 
                 Assert.Equal(1, changedtoDo.RepetitionType);
                 Assert.False(changedtoDo.Completed);

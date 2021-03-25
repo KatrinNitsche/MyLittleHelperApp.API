@@ -45,8 +45,8 @@ namespace MyHelpersApp.API.Controllers
 
             return budgetEntry;
         }
-    
-        [HttpDelete] 
+
+        [HttpDelete]
         public BudgetEntry Delete(int id)
         {
             return this.budgetRepository.Remove(id);

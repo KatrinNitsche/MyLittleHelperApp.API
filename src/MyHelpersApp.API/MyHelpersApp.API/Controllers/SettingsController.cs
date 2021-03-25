@@ -15,13 +15,13 @@ namespace MyHelpersApp.API.Controllers
             this.settingsRepository = settingsRepository;
         }
 
-        [HttpGet] 
+        [HttpGet]
         public Settings Get()
         {
             return this.settingsRepository.Load();
         }
 
-        [HttpPost] 
+        [HttpPost]
         public Settings Post(Settings settings)
         {
             return this.settingsRepository.Save(settings);

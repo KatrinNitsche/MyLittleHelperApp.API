@@ -8,5 +8,6 @@ namespace MyHelpersApp.Data
         public int Amount { get; set; }
         public DateTime BudgetDate { get; set; }
         public int RepetitionType { get; set; }
+        public int? RepitionOfId { get; set; }
     }
 }

@@ -10,25 +10,25 @@ namespace MyHelpersApp.API.Controllers
     [ApiController]
     [Route("[controller]")]
     public class ToDoController : ControllerBase
-    {       
+    {
         private readonly IToDoService toDoService;
 
         public ToDoController(IToDoService toDoService)
         {
             this.toDoService = toDoService;
         }
-       
+
         [HttpGet]
-        public IEnumerable<ToDo> Get( int? categoryId, bool todaysToDos = false)
+        public IEnumerable<ToDo> Get(int? categoryId, bool todaysToDos = false)
         {
             if (!todaysToDos)
             {
                 return this.toDoService.GetAll(categoryId).OrderBy(x => x.Important).ToArray();
-            } 
+            }
             else
             {
                 return this.toDoService.GetAll(categoryId).Where(td => td.DueDate.Date == DateTime.Now.Date).OrderBy(x => x.Important).ToArray();
-            }            
+            }
         }
 
         [HttpPost]
@@ -42,13 +42,13 @@ namespace MyHelpersApp.API.Controllers
             {
                 this.toDoService.Update(toDo);
             }
-            
+
             return toDo;
         }
 
         [HttpDelete]
         public ToDo Delete(int id)
-        {            
+        {
             return this.toDoService.Remove(id);
         }
     }
