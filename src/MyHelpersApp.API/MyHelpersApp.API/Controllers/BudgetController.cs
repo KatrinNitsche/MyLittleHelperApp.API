@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyHelpersApp.DAL.Interfaces;
+using MyHelpersApp.BL.Interfaces;
 using MyHelpersApp.Data;
 using System;
 using System.Collections.Generic;
@@ -11,11 +11,11 @@ namespace MyHelpersApp.API.Controllers
     [Route("[controller]")]
     public class BudgetController : ControllerBase
     {
-        private readonly IBudgetRepository budgetRepository;
+        private readonly IBudgetService budgetService;
 
-        public BudgetController(IBudgetRepository budgetRepository)
+        public BudgetController(IBudgetService budgetRepository)
         {
-            this.budgetRepository = budgetRepository;
+            this.budgetService = budgetRepository;
         }
 
         [HttpGet]
@@ -23,11 +23,11 @@ namespace MyHelpersApp.API.Controllers
         {
             if (thisMonth)
             {
-                return this.budgetRepository.GetAll().Where(be => be.BudgetDate.Date.Year == DateTime.Now.Year && be.BudgetDate.Date.Month == DateTime.Now.Month);
+                return this.budgetService.GetAll().Where(be => be.BudgetDate.Date.Year == DateTime.Now.Year && be.BudgetDate.Date.Month == DateTime.Now.Month);
             }
             else
             {
-                return this.budgetRepository.GetAll().OrderBy(b => b.BudgetDate);
+                return this.budgetService.GetAll().OrderBy(b => b.BudgetDate);
             }
         }
 
@@ -36,11 +36,11 @@ namespace MyHelpersApp.API.Controllers
         {
             if (budgetEntry.Id == 0)
             {
-                this.budgetRepository.Add(budgetEntry);
+                this.budgetService.Add(budgetEntry);
             }
             else
             {
-                this.budgetRepository.Update(budgetEntry);
+                this.budgetService.Update(budgetEntry);
             }
 
             return budgetEntry;
@@ -49,7 +49,7 @@ namespace MyHelpersApp.API.Controllers
         [HttpDelete]
         public BudgetEntry Delete(int id)
         {
-            return this.budgetRepository.Remove(id);
+            return this.budgetService.Remove(id);
         }
     }
 }

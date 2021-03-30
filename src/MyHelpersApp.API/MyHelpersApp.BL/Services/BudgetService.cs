@@ -35,7 +35,7 @@ namespace MyHelpersApp.BL.Services
                             Description = budgetEntry.Description,
                             RepetitionType = budgetEntry.RepetitionType,
                             RepitionOfId = idOfFirstEntry,
-                            BudgetDate = this.GetNextDate(entry.BudgetDate, entry.RepetitionType, i)
+                            BudgetDate = HelperService.GetNextDate(entry.BudgetDate, entry.RepetitionType, i)
                         };
 
                         if (followUpEntry.BudgetDate.Date != entry.BudgetDate.Date) this.budgetRepository.Add(followUpEntry);
@@ -75,7 +75,12 @@ namespace MyHelpersApp.BL.Services
                 {
                     if (existingEntry.RepetitionType != 0)
                     {
-                        //ToDo: remove repetion entries
+                        var originalId = existingEntry.RepitionOfId != null ? existingEntry.RepitionOfId : existingEntry.Id;
+                        var list = this.budgetRepository.GetAll().Where(b => b.RepitionOfId == originalId || b.Id == originalId).ToList();
+                        foreach (var entry in list)
+                        {
+                            this.budgetRepository.Remove(entry.Id);
+                        }
                     }
                     else
                     {
@@ -83,7 +88,7 @@ namespace MyHelpersApp.BL.Services
                     }
                 }
 
-                return null;
+                return existingEntry;
             }
             catch (Exception)
             {
@@ -138,7 +143,7 @@ namespace MyHelpersApp.BL.Services
                 this.budgetRepository.Update(entry);
                 if (existingEntry.RepetitionType != budgetEntry.RepetitionType)
                 {
-                    entry.BudgetDate = GetNextDate(firstDate, budgetEntry.RepetitionType, index);
+                    entry.BudgetDate = HelperService.GetNextDate(firstDate, budgetEntry.RepetitionType, index);
                 }
 
                 index++;
@@ -148,19 +153,6 @@ namespace MyHelpersApp.BL.Services
             {
                 this.budgetRepository.Update(budgetEntry);
             }
-        }
-
-        private DateTime GetNextDate(DateTime firstDate, int repetitionType, int index)
-        {
-            RepetitionType repeat = (RepetitionType)repetitionType;
-            switch (repeat)
-            {
-                case RepetitionType.weekly: return firstDate.AddDays(7 * (index + 1));
-                case RepetitionType.monthly: return firstDate.AddMonths(index + 1);
-                case RepetitionType.yearly: return firstDate.AddYears(index + 1);
-            }
-
-            return firstDate;
-        }
+        }       
     }
 }

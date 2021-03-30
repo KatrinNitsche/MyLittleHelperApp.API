@@ -38,6 +38,7 @@ namespace MyHelpersApp.API
             services.AddScoped<ICategoryRepository, CategoryRepository>();
 
             services.AddTransient<IToDoService, ToDoService>();
+            services.AddTransient<IBudgetService, BudgetService>();
 
             services.AddControllers();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
